@@ -9,7 +9,8 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Hello World Test');
+    console.log("Added a console statement");
+    res.send('Hello World Test');
 });
  
 app.listen(PORT, HOST, () => {
